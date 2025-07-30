@@ -41,7 +41,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                <a href="images/bgcr.jpeg"><img style="width:100%;max-width:100%;object-fit: cover;" alt="profile photo" src="images/bgcr.jpeg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -58,27 +58,14 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="h2_compact_stop()" onmouseover="h2_compact_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="h2_compact_stop()" onmouseover="h2_compact_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='h2_compact_image'>
-            <img src='images/h2_compact.jpg' width="160">
-          </div>
-          <img src='images/h2_compact.jpg' width="160">
+          <img src='data/h2compact.gif' width="250" autoplay loop>
         </div>
-        <script type="text/javascript">
-          function h2_compact_start() {
-            document.getElementById('h2_compact_image').style.opacity = "1";
-          }
-
-          function h2_compact_stop() {
-            document.getElementById('h2_compact_image').style.opacity = "0";
-          }
-          h2_compact_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2505.17627">
+      <td style="padding:16px;width:75%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2505.17627" target="_blank">
           <span class="papertitle">H2-COMPACT: Human-Humanoid Co-Manipulation via Adaptive Contact Trajectory Policies</span>
         </a>
         <br>
@@ -92,7 +79,9 @@
         <br>
         <em>IEEE-RAS 24th International Conference on Humanoid Robots (Humanoids)</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2505.17627">arXiv</a>
+        <a href="https://arxiv.org/abs/2505.17627" target="_blank">arXiv</a> /
+        <a href="https://h2compact.github.io/h2compact/" target="_blank">Webpage</a> 
+        <!-- <a href="https://github.com/h2compact/h2compact" target="_blank">Code</a> -->
         <p></p>
         <p>
           Adaptive contact trajectory policies for seamless human-humanoid co-manipulation tasks, enabling natural collaborative interactions.
@@ -100,26 +89,14 @@
       </td>
     </tr>
 
-    <tr onmouseout="wavelet_policy_stop()" onmouseover="wavelet_policy_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    
+    <tr onmouseout="wavelet_policy_stop()" onmouseover="wavelet_policy_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='wavelet_policy_image'>
-            <img src='images/wavelet_policy.jpg' width="160">
-          </div>
-          <img src='images/wavelet_policy.jpg' width="160">
+          <img src='images/wavelet.png' width="250">
         </div>
-        <script type="text/javascript">
-          function wavelet_policy_start() {
-            document.getElementById('wavelet_policy_image').style.opacity = "1";
-          }
-
-          function wavelet_policy_stop() {
-            document.getElementById('wavelet_policy_image').style.opacity = "0";
-          }
-          wavelet_policy_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
+      <td style="padding:16px;width:75%;vertical-align:top">
         <a href="https://arxiv.org/abs/2507.04331">
           <span class="papertitle">Wavelet Policy: Lifting Scheme for Policy Learning in Long-Horizon Tasks</span>
         </a>
@@ -141,26 +118,15 @@
       </td>
     </tr>
 
-    <tr onmouseout="social_nav_stop()" onmouseover="social_nav_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='social_nav_image'>
-            <img src='images/social_navigation.jpg' width="160">
-          </div>
-          <img src='images/social_navigation.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function social_nav_start() {
-            document.getElementById('social_nav_image').style.opacity = "1";
-          }
 
-          function social_nav_stop() {
-            document.getElementById('social_nav_image').style.opacity = "0";
-          }
-          social_nav_stop()
-        </script>
+    
+    <tr onmouseout="social_nav_stop()" onmouseover="social_nav_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
+        <div class="one">
+          <video src='data/hallway_passive_on_your_left_new.mp4' width="250" autoplay loop muted>
+        </div>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
+      <td style="padding:16px;width:75%;vertical-align:top">
         <a href="https://arxiv.org/abs/2409.04965">
           <span class="papertitle">Socially-Aware Robot Navigation Enhanced by Bidirectional Natural Language Conversations Using Large Language Models</span>
         </a>
@@ -176,7 +142,9 @@
         <br>
         <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2409.04965">arXiv</a>
+        <a href="https://arxiv.org/abs/2409.04965">arXiv</a> /
+        <a href="https://hsacllm.github.io/" target="_blank">Webpage</a> /
+        <a href="https://github.com/bethalageetachandraraju/llm-social-navigation-bot" target="_blank">Code</a>
         <p></p>
         <p>
           Enhanced robot navigation through bidirectional natural language conversations using large language models for socially-aware interactions.
@@ -186,27 +154,14 @@
 
 
 
-    <tr onmouseout="embodied_chain_stop()" onmouseover="embodied_chain_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="embodied_chain_stop()" onmouseover="embodied_chain_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='embodied_chain_image'>
-            <img src='images/embodied_chain.jpg' width="160">
-          </div>
-          <img src='images/embodied_chain.jpg' width="160">
+          <img src='images/embodied.png' width="250">
         </div>
-        <script type="text/javascript">
-          function embodied_chain_start() {
-            document.getElementById('embodied_chain_image').style.opacity = "1";
-          }
-
-          function embodied_chain_stop() {
-            document.getElementById('embodied_chain_image').style.opacity = "0";
-          }
-          embodied_chain_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2504.09532">
+      <td style="padding:16px;width:75%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2504.09532" target="_blank">
           <span class="papertitle">Embodied Chain of Action Reasoning with Multi-Modal Foundation Model for Humanoid Loco-manipulation</span>
         </a>
         <br>
@@ -220,7 +175,7 @@
         <br>
         <em>arXiv preprint arXiv:2504.09532</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2504.09532">arXiv</a>
+        <a href="https://arxiv.org/abs/2504.09532" target="_blank">arXiv</a>
         <p></p>
         <p>
           Development of embodied chain-of-action reasoning using multi-modal foundation models to enhance humanoid robot locomotion and manipulation capabilities.
@@ -228,27 +183,14 @@
       </td>
     </tr>
 
-    <tr onmouseout="llm_nav_stop()" onmouseover="llm_nav_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="llm_nav_stop()" onmouseover="llm_nav_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='llm_nav_image'>
-            <img src='images/llm_navigation.jpg' width="160">
-          </div>
-          <img src='images/llm_navigation.jpg' width="160">
+          <img src='images/nav_llm.png' width="250">
         </div>
-        <script type="text/javascript">
-          function llm_nav_start() {
-            document.getElementById('llm_nav_image').style.opacity = "1";
-          }
-
-          function llm_nav_stop() {
-            document.getElementById('llm_nav_image').style.opacity = "0";
-          }
-          llm_nav_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2402.09546">
+      <td style="padding:16px;width:75%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2402.09546" target="_blank">
           <span class="papertitle">How secure are large language models (LLMs) for navigation in urban environments?</span>
         </a>
         <br>
@@ -261,9 +203,9 @@
         M. Wang,
         A. Tzes
         <br>
-        <em>Under Review</em>, 2025
+        <em>Under Review (Journal)</em>, 2024
         <br>
-        <a href="https://arxiv.org/abs/2402.09546">arXiv</a>
+        <a href="https://arxiv.org/abs/2402.09546" target="_blank">arXiv</a>
         <p></p>
         <p>
           Investigation of security vulnerabilities in large language models when used for autonomous navigation in urban environments, highlighting potential risks and mitigation strategies.
@@ -271,27 +213,14 @@
       </td>
     </tr>
 
-    <tr onmouseout="hierarchical_scoring_stop()" onmouseover="hierarchical_scoring_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="hierarchical_scoring_stop()" onmouseover="hierarchical_scoring_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='hierarchical_scoring_image'>
-            <img src='images/hierarchical_scoring.jpg' width="160">
-          </div>
-          <img src='images/hierarchical_scoring.jpg' width="160">
+          <video src='data/neurips.mp4' width="250" autoplay loop muted>
         </div>
-        <script type="text/javascript">
-          function hierarchical_scoring_start() {
-            document.getElementById('hierarchical_scoring_image').style.opacity = "1";
-          }
-
-          function hierarchical_scoring_stop() {
-            document.getElementById('hierarchical_scoring_image').style.opacity = "0";
-          }
-          hierarchical_scoring_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2506.07338">
+      <td style="padding:16px;width:75%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2506.07338" target="_blank">
           <span class="papertitle">Hierarchical Scoring with 3D Gaussian Splatting for Instance Image-Goal Navigation</span>
         </a>
         <br>
@@ -304,7 +233,9 @@
         <br>
         <em>Under Review</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2506.07338">arXiv</a>
+        <a href="https://arxiv.org/abs/2506.07338" target="_blank">arXiv</a> /
+        <a href="data/IGN_B1 (1).mp4"> Video</a>
+      
         <p></p>
         <p>
           Advanced instance image-goal navigation using hierarchical scoring with 3D Gaussian splatting for precise object localization.
@@ -314,27 +245,14 @@
 
 
 
-    <tr onmouseout="mapbert_stop()" onmouseover="mapbert_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="mapbert_stop()" onmouseover="mapbert_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='mapbert_image'>
-            <img src='images/mapbert.jpg' width="160">
-          </div>
-          <img src='images/mapbert.jpg' width="160">
+          <img src='images/bertmap.png' width="250">
         </div>
-        <script type="text/javascript">
-          function mapbert_start() {
-            document.getElementById('mapbert_image').style.opacity = "1";
-          }
-
-          function mapbert_stop() {
-            document.getElementById('mapbert_image').style.opacity = "0";
-          }
-          mapbert_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2506.07350">
+      <td style="padding:16px;width:75%;vertical-align:top">
+        <a href="https://arxiv.org/abs/2506.07350" target="_blank">
           <span class="papertitle">MapBERT: Bitwise Masked Modeling for Real-Time Semantic Mapping Generation</span>
         </a>
         <br>
@@ -348,7 +266,8 @@
         <br>
         <em>arXiv preprint arXiv:2506.07350</em>
         <br>
-        <a href="https://arxiv.org/abs/2506.07350">arXiv</a>
+        <a href="https://arxiv.org/abs/2506.07350" target="_blank">arXiv</a>
+        <!-- <a href="data/mapbert.mp4" target="_blank">Video</a> -->
         <p></p>
         <p>
           Real-time semantic mapping generation using bitwise masked modeling for efficient robotic perception and navigation.
@@ -358,40 +277,27 @@
 
 
 
-    <tr onmouseout="retrospective_framework_stop()" onmouseover="retrospective_framework_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
+    <tr onmouseout="retrospective_framework_stop()" onmouseover="retrospective_framework_start()" class="paper-row">
+      <td style="padding:16px;width:25%;vertical-align:top">
         <div class="one">
-          <div class="two" id='retrospective_framework_image'>
-            <img src='images/retrospective_framework.jpg' width="160">
-          </div>
-          <img src='images/retrospective_framework.jpg' width="160">
+          <img src='images/icara.png' width="250">
         </div>
-        <script type="text/javascript">
-          function retrospective_framework_start() {
-            document.getElementById('retrospective_framework_image').style.opacity = "1";
-          }
-
-          function retrospective_framework_stop() {
-            document.getElementById('retrospective_framework_image').style.opacity = "0";
-          }
-          retrospective_framework_stop()
-        </script>
       </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
+      <td style="padding:16px;width:75%;vertical-align:top">
         <a href="#">
           <span class="papertitle">Integrating Retrospective Framework in Multi-Robot Collaboration</span>
         </a>
         <br>
-        <a href="#">J. Liang</a>,
-        <a href="#">H. Huang</a>,
-        <a href="#">Y. Hao</a>,
-        <strong>Geeta Chandra Raju, Bethala</strong>,
-        <a href="#">C. Wen</a>,
-        <a href="#">Y. Fang</a>
+        J. Liang,
+        H. Huang,
+        Y. Hao,
+        <strong>Geeta Chandra Raju. Bethala</strong>,
+        C. Wen,
+        Y. Fang
         <br>
-        <em>11th International Conference on Automation, Robotics, and Applications (ICARA)</em>, 2025
+        <em>International Conference on Automation, Robotics, and Applications (ICARA)</em>, 2025
         <br>
-        <a href="#">Conference</a>
+        <a href="https://arxiv.org/abs/2502.11227">arXiv</a>
         <p></p>
         <p>
           Retrospective framework integration for enhanced multi-robot collaboration and coordination in complex environments.

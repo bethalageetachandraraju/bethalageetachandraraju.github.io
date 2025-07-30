@@ -110,18 +110,18 @@ h2 {
 }
 
 .one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+    width: 250px;
+    height: 250px;
+    position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
 }
 
 .fade {
@@ -139,4 +139,19 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+/* Remove the zoom effect for paper images */
+.one img {
+    transition: none;
+}
+
+/* Zoom effect for entire paper row */
+.paper-row {
+    transition: transform 0.3s ease-in-out;
+}
+
+.paper-row:hover {
+    transform: scale(1.02);
+    cursor: pointer;
 }
