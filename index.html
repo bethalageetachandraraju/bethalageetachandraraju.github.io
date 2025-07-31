@@ -326,11 +326,7 @@
             <div class="video-slider" id="videoSlider">
               <!-- Row 1 -->
               <div class="video-row" id="row1">
-                <div class="video-item">
-                  <img src="data/video_bar/human_mimic.gif" alt="Human Mimicry" style="width:100%; max-width:240px; max-height:180px; border-radius:6px; display:block; margin:0 auto;">
-                  <p class="video-caption">Human Mimicry</p>
-                  <p class="video-description">Humanoid robot mimicking human movements and gestures for natural interaction.</p>
-					</div>
+
                 <div class="video-item">
                   <video src="data/video_bar/social_nav_1.mp4" autoplay loop muted>
     Your browser does not support the video tag.
@@ -345,6 +341,12 @@
                   <p class="video-caption">Social Navigation 2</p>
                   <p class="video-description">Advanced social navigation demonstrating human-aware robot behavior.</p>
         </div>
+
+        <div class="video-item">
+          <img src="data/video_bar/human_mimic.gif" alt="Human Mimicry" style="width:100%; max-width:240px; max-height:180px; border-radius:6px; display:block; margin:0 auto;">
+          <p class="video-caption">Human Mimicry</p>
+          <p class="video-description">Humanoid robot mimicking human movements and gestures for natural interaction.</p>
+  </div>
                 <div class="video-item">
                   <video src="data/video_bar/stand_pick_place.mp4" autoplay loop muted>
             Your browser does not support the video tag.
@@ -414,22 +416,16 @@
                   <p class="video-description">Hand-based teleoperation system for intuitive robot control and manipulation.</p>
                 </div>
                 <div class="video-item">
-                  <video src="data/video_bar/vr_teleop.mp4" autoplay loop muted preload="metadata" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <video src="data/video_bar/vr_teleop.mp4" autoplay loop muted style="width:100%; max-width:240px; max-height:180px; border-radius:6px; display:block; margin:0 auto;">
                     Your browser does not support the video tag.
                   </video>
-                  <div style="display:none; width:100%; max-width:240px; max-height:180px; border-radius:6px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666; font-size:12px; text-align:center; padding:20px;">
-                    VR Teleoperation<br>Video Loading...
-                  </div>
                   <p class="video-caption">VR Teleoperation</p>
                   <p class="video-description">Virtual reality-based teleoperation for immersive robot control and training.</p>
                 </div>
                 <div class="video-item">
-                  <video src="data/video_bar/act_can.mp4" autoplay loop muted preload="metadata" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <video src="data/video_bar/act_can.mp4" autoplay loop muted style="width:100%; max-width:240px; max-height:180px; border-radius:6px; display:block; margin:0 auto;">
                     Your browser does not support the video tag.
                   </video>
-                  <div style="display:none; width:100%; max-width:240px; max-height:180px; border-radius:6px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#666; font-size:12px; text-align:center; padding:20px;">
-                    Can Manipulation<br>Video Loading...
-                  </div>
                   <p class="video-caption">Can Manipulation</p>
                   <p class="video-description">Robotic manipulation of cylindrical objects demonstrating adaptive grasping strategies.</p>
                 </div>
@@ -509,6 +505,10 @@
             function slideVideos(direction) {
               const row1 = document.getElementById('row1');
               const row2 = document.getElementById('row2');
+              
+              // Add smooth transition for manual navigation
+              row1.style.transition = 'transform 2s ease-in-out';
+              row2.style.transition = 'transform 2s ease-in-out';
               
               if (direction === 'left') {
                 currentPosition += step;
