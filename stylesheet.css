@@ -1,3 +1,52 @@
+/* ============================================
+   LAYOUT CONFIGURATION - EASY PARAMETER CONTROL
+   ============================================
+   Update these variables to control the layout of:
+   - Content Box (intro text)
+   - Image Box (profile photo)
+   - Video Box (explanation video)
+   
+   POSITIONING GUIDE:
+   - To move LEFT: use negative values for --left, or increase --right
+   - To move RIGHT: use positive values for --left, or decrease --right
+   - To move UP: use negative values for --top
+   - To move DOWN: use positive values for --top
+   - All boxes are absolutely positioned, so you have full control!
+   ============================================ */
+
+:root {
+  /* Content Box Parameters */
+  --content-box-width: 62%;
+  --content-box-height: auto;
+  --content-box-top: 0;
+  --content-box-left: -110px;              /* Move left: use negative values (e.g., -20px) */
+  --content-box-padding: 2.5%;
+  
+  /* Image Box Parameters */
+  --image-box-width: 37%;
+  --image-box-height: auto;
+  --image-box-top: 90px;
+  --image-box-right: 80px;              /* Move left: increase value (e.g., 20px) */
+  --image-box-padding: 2.5%;
+  --image-width: 50%;
+  --image-max-width: 50%;
+  
+  /* Video Box Parameters */
+  --video-box-width: 55%;
+  --video-box-height: auto;
+  --video-box-top: 60px;            /* Position below image: adjust this value */
+  --video-box-right: -50px;              /* Align with image: match --image-box-right */
+  /* --video-box-top: 230px;            Position below image: adjust this value */
+  /* --video-box-right: 0px;              Align with image: match --image-box-right   */
+  --video-box-padding: 2.5%;
+  --video-width: 100%;
+  --video-max-width: 100%;
+}
+
+/* ============================================
+   END OF CONFIGURATION
+   ============================================ */
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
@@ -276,8 +325,84 @@ span.highlight {
   }
 }
 
+/* Header Layout Boxes - Independent Positioning */
+.header-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 400px; /* Ensure container has height for absolute positioning */
+}
+
+/* Content Box - Independently Positioned */
+.content-box {
+  position: absolute;
+  width: var(--content-box-width);
+  height: var(--content-box-height);
+  top: var(--content-box-top);
+  left: var(--content-box-left);
+  padding: var(--content-box-padding);
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* Image Box - Independently Positioned */
+.image-box {
+  position: absolute;
+  width: var(--image-box-width);
+  height: var(--image-box-height);
+  top: var(--image-box-top);
+  right: var(--image-box-right);
+  padding: var(--image-box-padding);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.image-box img {
+  width: var(--image-width);
+  max-width: var(--image-max-width);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Video Box - Independently Positioned */
+.video-box {
+  position: absolute;
+  width: var(--video-box-width);
+  height: var(--video-box-height);
+  top: var(--video-box-top);
+  right: var(--video-box-right);
+  padding: var(--video-box-padding);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.video-box video {
+  width: var(--video-width);
+  max-width: var(--video-max-width);
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .content-box,
+  .image-box,
+  .video-box {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  
   .video-row {
     flex-wrap: wrap;
     gap: 15px;
